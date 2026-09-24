@@ -12,6 +12,10 @@ load_dotenv()
 app = FastAPI()
 Base.metadata.create_all(bind=engine)
 API_KEY = os.getenv("API_KEY")
+#---------------------home route ------------------------#
+@app.get("/")
+def home():
+    return {"message": "Hello World"}
 #----------------------posting products-------------------#
 @app.post("/products",response_model=ProductResponse, status_code=201)
 def create_product(product: ProductCreate, db=Depends(get_db)):
