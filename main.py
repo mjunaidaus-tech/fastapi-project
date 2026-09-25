@@ -15,7 +15,7 @@ API_KEY = os.getenv("API_KEY")
 #---------------------home route ------------------------#
 @app.get("/")
 def home():
-    return {"message": "My FastAPI app is deployed!"
+    return {"message": "My FastAPI app is deployed!"}
 #----------------------posting products-------------------#
 @app.post("/products",response_model=ProductResponse, status_code=201)
 def create_product(product: ProductCreate, db=Depends(get_db)):
