@@ -30,11 +30,9 @@ fastapi-project/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/fastapi-project.git
+git clone https://github.com/mjunaidaus-tech/fastapi-project.git
 cd fastapi-project
 ```
-
-Replace `YOUR-USERNAME` with your GitHub username.
 
 ### 2. Create a virtual environment
 
